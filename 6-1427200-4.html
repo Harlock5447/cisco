@@ -40,25 +40,102 @@
 
   <!-- Header AMP simple -->
   <header class="bg-white border-b">
-    <div class="container-max mx-auto px-4 py-3 flex items-center justify-between gap-3">
-      <a href="https://www.ds3comunicaciones.com/AMP/index.html" class="flex items-center gap-2">
-        <img src="http://www.ds3comunicaciones.com/belden/images/amp_logo2-91x20.jpg"
-             class="h-6 w-auto" alt="AMP">
-        <span class="hidden sm:inline text-sm font-semibold text-slate-700">AMP</span>
+  <div class="container-max mx-auto px-4 py-3">
+   <!-- Header: móvil con contactos debajo de logos -->
+<div class="container-max mx-auto px-4 py-3">
+  <!-- fila 1: menú + logos + buscar -->
+  <div class="flex items-center justify-between gap-3">
+    <!-- izquierda: menú + logos -->
+    <div class="flex items-center gap-3 min-w-0">
+      <button type="button"
+              class="inline-flex items-center justify-center h-10 w-10 rounded-lg border border-slate-200 bg-white hover:bg-slate-50 shrink-0"
+              aria-label="Abrir menú">
+        <i class="fa-solid fa-bars text-slate-700"></i>
+      </button>
+
+      <!-- logos -->
+      <div class="flex items-center gap-2 min-w-0">
+        <img src="./assets/img/logo-ds3.jpg"
+             alt="DS3 Comunicaciones"
+             class="h-8 w-auto object-contain"
+             loading="lazy">
+
+        <span class="text-slate-300">|</span>
+
+        <img src="./assets/img/logo-cisco.png"
+             alt="Cisco"
+             class="h-7 w-auto object-contain"
+             loading="lazy">
+      </div>
+    </div>
+
+    <!-- derecha: buscar -->
+    <button type="button"
+            class="inline-flex items-center justify-center h-10 w-10 rounded-lg border border-slate-200 bg-white hover:bg-slate-50 shrink-0"
+            aria-label="Buscar">
+      <i class="fa-solid fa-magnifying-glass text-slate-700"></i>
+    </button>
+  </div>
+
+  <!-- fila 2: contactos (debajo en móvil, en fila en pantallas grandes) -->
+  <div class="mt-3 grid grid-cols-1 gap-2 text-sm text-slate-700 sm:flex sm:flex-wrap sm:items-center sm:gap-x-5 sm:gap-y-2">
+    <a href="tel:+51996533223" class="inline-flex items-center gap-2 hover:text-blue-600">
+      <i class="fa-solid fa-phone"></i> 996533223
+    </a>
+    <a href="https://wa.me/51994428965" target="_blank" rel="noopener"
+       class="inline-flex items-center gap-2 hover:text-green-600">
+      <i class="fa-brands fa-whatsapp"></i> 994428965
+    </a>
+    <a href="mailto:netperu100@hotmail.com" class="inline-flex items-center gap-2 hover:text-blue-600 break-all">
+      <i class="fa-solid fa-envelope"></i> netperu100@hotmail.com
+    </a>
+  </div>
+
+  
+</div>
+
+</header>
+
+<nav class="bg-white border-b">
+  <div class="container-max mx-auto px-4">
+    <div class="flex items-center gap-6 overflow-x-auto py-2 text-xs sm:text-sm text-slate-700 whitespace-nowrap">
+      <a href="./cisco/index.html#switch-catalyst" class="flex items-center gap-2 hover:text-blue-700 transition">
+        <img src="./icons/Switch Catalyst.ico" class="h-5 w-5 object-contain" alt="Switch Catalyst">
+        <span>Switch Catalyst</span>
       </a>
 
-      <nav class="flex items-center gap-4 text-sm">
-        <a class="text-slate-600 hover:text-blue-600 transition"
-           href="https://www.ds3comunicaciones.com/AMP/index.html" target="_blank" rel="noopener">
-          Catálogo AMP
-        </a>
-        <a class="text-slate-600 hover:text-blue-600 transition"
-           href="https://www.ds3comunicaciones.com/AMP/precios_amp.html" target="_blank" rel="noopener">
-          Precios
-        </a>
-      </nav>
+      <a href="./cisco/index.html#cisco-business" class="flex items-center gap-2 hover:text-blue-700 transition">
+        <img src="./icons/Cisco Business.ico" class="h-5 w-5 object-contain" alt="Cisco Business">
+        <span>Cisco Business</span>
+      </a>
+
+      <a href="./cisco/index.html#switch-industrial" class="flex items-center gap-2 hover:text-blue-700 transition">
+        <img src="./icons/Switch Industrial.ico" class="h-5 w-5 object-contain" alt="Switch Industrial">
+        <span>Switch Industrial</span>
+      </a>
+
+      <a href="./cisco/index.html#aironet" class="flex items-center gap-2 hover:text-blue-700 transition">
+        <img src="./icons/Aironet.ico" class="h-5 w-5 object-contain" alt="Aironet">
+        <span>Aironet</span>
+      </a>
+
+      <a href="./cisco/index.html#telefono" class="flex items-center gap-2 hover:text-blue-700 transition">
+        <img src="./icons/Télefono.ico" class="h-5 w-5 object-contain" alt="Teléfono">
+        <span>Teléfono</span>
+      </a>
+
+      <a href="./cisco/index.html#meraki" class="flex items-center gap-2 hover:text-blue-700 transition">
+        <img src="./icons/mariakii.ico" class="h-5 w-5 object-contain" alt="Meraki">
+        <span>Meraki</span>
+      </a>
+
+      <a href="./cisco/index.html#transceiver" class="flex items-center gap-2 hover:text-blue-700 transition">
+        <img src="./icons/Transceiver.ico" class="h-5 w-5 object-contain" alt="Transceiver">
+        <span>Transceiver</span>
+      </a>
     </div>
-  </header>
+  </div>
+</nav>
 
   <!-- Breadcrumb -->
   <nav class="bg-white border-b text-xs sm:text-sm text-slate-600">
@@ -346,6 +423,94 @@
       </section>
     </div>
   </main>
+  <!-- También Disponible (PEGAR AQUÍ) -->
+<section class="container-max mx-auto px-4 mt-12">
+  <!-- Banner centrado -->
+  <div class="flex justify-center">
+    <div class="w-full sm:w-auto rounded-xl bg-sky-500 text-white px-6 py-3 text-center font-extrabold text-lg sm:text-2xl shadow-md">
+      También Disponible: Cables Cat 6 y Cat 6A AMP en stock
+    </div>
+  </div>
+
+  <div class="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+    <!-- CAT 6 -->
+    <article class="bg-white rounded-2xl border border-blue-200 shadow-sm hover:shadow-md transition overflow-hidden">
+      <div class="p-5">
+        <div class="bg-white rounded-xl border border-slate-100 h-44 flex items-center justify-center overflow-hidden">
+          <img src="./assets/img/6-1427200-4.jpg" alt="6-1427200-4"
+               class="max-h-44 object-contain" onerror="this.src='../assets/img/referencial.jpg'">
+        </div>
+        <hr class="my-4"/>
+        <h3 class="text-center font-extrabold text-slate-900 text-lg">6-1427200-4</h3>
+        <p class="mt-2 text-center text-sm text-slate-600 line-clamp-3">Cable UTP AMP Categoría 6 Chaqueta CMR</p>
+        <a href="https://www.ds3comunicaciones.com/AMP/6-1427200-4.html" target="_blank" rel="noopener"
+           class="mt-5 block text-center font-semibold text-blue-700 hover:text-blue-800">Ver Producto</a>
+      </div>
+    </article>
+
+    <article class="bg-white rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition overflow-hidden">
+      <div class="p-5">
+        <div class="bg-white rounded-xl border border-slate-100 h-44 flex items-center justify-center overflow-hidden">
+          <img src="./assets/img/1859345-2.jpg" alt="1859345-2"
+               class="max-h-44 object-contain" onerror="this.src='../assets/img/referencial.jpg'">
+        </div>
+        <hr class="my-4"/>
+        <h3 class="text-center font-extrabold text-slate-900 text-lg">1859345-2</h3>
+        <p class="mt-2 text-center text-sm text-slate-600 line-clamp-3">Cable UTP AMP Categoría 6 Chaqueta LSZH</p>
+        <a href="https://www.ds3comunicaciones.com/AMP/index.html#cablecat6" target="_blank" rel="noopener"
+           class="mt-5 block text-center font-semibold text-blue-700 hover:text-blue-800">Ver Producto</a>
+      </div>
+    </article>
+
+    <article class="bg-white rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition overflow-hidden">
+      <div class="p-5">
+        <div class="bg-white rounded-xl border border-slate-100 h-44 flex items-center justify-center overflow-hidden">
+          <img src="./assets/img/1427254-4.jpg" alt="1427254-4"
+               class="max-h-44 object-contain" onerror="this.src='../assets/img/referencial.jpg'">
+        </div>
+        <hr class="my-4"/>
+        <h3 class="text-center font-extrabold text-slate-900 text-lg">1427254-4</h3>
+        <p class="mt-2 text-center text-sm text-slate-600 line-clamp-3">Cable UTP AMP Categoría 6 Chaqueta CM</p>
+        <a href="https://www.ds3comunicaciones.com/AMP/index.html#cablecat6" target="_blank" rel="noopener"
+           class="mt-5 block text-center font-semibold text-blue-700 hover:text-blue-800">Ver Producto</a>
+      </div>
+    </article>
+
+    <article class="bg-white rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition overflow-hidden">
+      <div class="p-5">
+        <div class="bg-white rounded-xl border border-slate-100 h-44 flex items-center justify-center overflow-hidden">
+          <img src="./assets/img/219585-2.jpg" alt="219585-2"
+               class="max-h-44 object-contain" onerror="this.src='../assets/img/referencial.jpg'">
+        </div>
+        <hr class="my-4"/>
+        <h3 class="text-center font-extrabold text-slate-900 text-lg">219585-2</h3>
+        <p class="mt-2 text-center text-sm text-slate-600 line-clamp-3">Cable UTP Cat 6 23 AWG Chaqueta LSZH</p>
+        <a href="https://www.ds3comunicaciones.com/AMP/index.html#cablecat6" target="_blank" rel="noopener"
+           class="mt-5 block text-center font-semibold text-blue-700 hover:text-blue-800">Ver Producto</a>
+      </div>
+    </article>
+
+    <!-- CAT 6A -->
+    <article class="bg-white rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition overflow-hidden">
+      <div class="p-5">
+        <div class="bg-white rounded-xl border border-slate-100 h-44 flex items-center justify-center overflow-hidden">
+          <img src="./assets/img/1859218-2.jpg" alt="1859218-2"
+               class="max-h-44 object-contain" onerror="this.src='../assets/img/referencial.jpg'">
+        </div>
+        <hr class="my-4"/>
+        <h3 class="text-center font-extrabold text-slate-900 text-lg">1859218-2</h3>
+        <p class="mt-2 text-center text-sm text-slate-600 line-clamp-3">Cable Cat 6A apantallado Chaqueta LSZH</p>
+        <a href="https://www.ds3comunicaciones.com/AMP/1859218-2.html" target="_blank" rel="noopener"
+           class="mt-5 block text-center font-semibold text-blue-700 hover:text-blue-800">Ver Producto</a>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+
+  
 
   <!-- Footer -->
   <footer class="bg-white border-t mt-12">
